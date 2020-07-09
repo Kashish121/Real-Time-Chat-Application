@@ -1,0 +1,26 @@
+{
+    "name": "real-time-chat-application",
+    "version": "1.0.0",
+    "description": "A real time chat application",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "devStart": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Kashish121/Real-Time-Chat-Application.git"
+    },
+    "author": "Kashish",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Kashish121/Real-Time-Chat-Application/issues"
+    },
+    "homepage": "https://github.com/Kashish121/Real-Time-Chat-Application#readme",
+    "dependencies": {
+        "socket.io": "^2.3.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}

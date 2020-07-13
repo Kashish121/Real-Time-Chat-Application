@@ -19,26 +19,25 @@ socket.on('user-disconnected', name => {
     appendMessage(`${name} disconnected`)
 })
 
-// messageForm.addEventListener('submit', e => {
-//     e.preventDefault()
-//         // prevents refreshing the page every time, *avoids losing conversation history*
-//     const message = messageInput.value
-//     appendMessage(`You: ${message}`)
-//     socket.emit('send-chat-message', message)
-//     messageInput.value = ''
-//         // empties message input box after the message is sent
-// })
-
-function addingMessage() {
-    console.log("into func")
-    event.preventDefault()
+messageForm.addEventListener('submit', e => {
+    e.preventDefault()
         // prevents refreshing the page every time, *avoids losing conversation history*
     const message = messageInput.value
     appendMessage(`You: ${message}`)
     socket.emit('send-chat-message', message)
     messageInput.value = ''
         // empties message input box after the message is sent
-}
+})
+
+// function addingMessage() {
+//     messageForm.onsubmit.preventDefault()
+//         // prevents refreshing the page every time, *avoids losing conversation history*
+//     const message = messageInput.value
+//     appendMessage(`You: ${message}`)
+//     socket.emit('send-chat-message', message)
+//     messageInput.value = ''
+//         // empties message input box after the message is sent
+// }
 
 function appendMessage(message) {
     const messageElement = document.createElement('div')

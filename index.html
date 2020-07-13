@@ -4,9 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Application</title>
+    <title>Talks</title>
     <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
     <!-- <script defer src="script.js"></script> -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <style>
         body {
             padding: 0;
@@ -41,10 +48,12 @@
         
         #message-input {
             flex-grow: 1;
+            -webkit-box-shadow: 0 1px 0 0 rgb(246, 255, 118);
+            box-shadow: 0 1px 0 0 rgb(246, 255, 118);
         }
         
         #send-button {
-            background-color: rgb(228, 235, 134);
+            background-color: rgb(150, 156, 56);
         }
     </style>
 </head>
@@ -53,9 +62,12 @@
     <div id="message-container"></div>
     <form id="send-container">
         <input type="text" id="message-input">
-        <input type="submit" id="send-button" onsubmit="addingMessage()">
+        <button class="btn waves-effect waves-light" id="send-button" type="submit" onsubmit="addingMessage()" name="action">Send
+            <i class="material-icons right">send</i>
+        </button>
     </form>
     <script defer src="script.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 </html>

@@ -18,6 +18,7 @@
     },
     "homepage": "https://github.com/Kashish121/Real-Time-Chat-Application#readme",
     "dependencies": {
+        "materialize-css": "^1.0.0-rc.2",
         "socket.io": "^2.3.0"
     },
     "devDependencies": {

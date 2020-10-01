@@ -1,5 +1,5 @@
 # Real-Time-Chat Application
-Real time chat application using NodeJS and socket.io
+Real time chat application using NodeJS and socket.io developed by Kashish121
 
 To Run:
 1. npm init
